@@ -1,0 +1,13 @@
+#tanks count at initialization
+initTankCount=10
+tankSpeed=5
+bulletSpeed=10
+gameWidth=1080
+gameHeight=960
+
+#fireStrategy  Extensibility 对更改关闭  对扩展开放  程序的弹性更好
+goodFS=com.alpha.tank.strategy.FourDirFireStrategy
+badFS=com.alpha.tank.strategy.DefaultFireStrategy
+
+#colliders
+colliders=com.alpha.tank.BulletTankCollider,com.alpha.tank.TankTankCollider,com.alpha.tank.BulletWallCollider
